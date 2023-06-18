@@ -4,6 +4,7 @@
         config = config ?? {};
         let modalId = config['modalId'] ?? 'captcha-modal';
         let callback = config['callback'] ?? function () {
+            $("#" + modalId).modal(hide);
         };
         let appkey = config['appkey'] ?? 'FFFF0N0000000000B42D';
         let scene = config['scene'] ?? 'nc_login';
