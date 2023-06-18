@@ -7,7 +7,7 @@
             $("#" + modalId).modal(hide);
         };
         let appkey = config['appkey'] ?? 'FFFF0N0000000000B42D';
-        let scene = config['scene'] ?? 'nc_login';
+        let scene = config['scene'] ?? 'nc_other';
         let title = config['title'] ?? '请完成安全验证';
         let center = config['center'] ?? true;
         let template = `<div class="modal fade" id="${modalId}"><div class="modal-dialog ${center ? 'modal-dialog-centered' : ''}"><div class="modal-content"><div class="modal-header">${title}<button type="button" class="btn-sm btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div id="${id}" class="nc-container"></div></div><div class="modal-footer"><button type="button" class="btn btn-sm btn-primary" data-bs-dismiss="modal"><small>关闭</small></button></div></div></div></div>`;
